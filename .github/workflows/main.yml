@@ -13,9 +13,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - name: npm ci
-        working-directory: ./frontend/project-idioma
+      - name: NPM CI
+        working-directory: ./frontend
         run: npm ci
-      - name: npm audit
-        working-directory: ./frontend/project-idioma
-        run: npm audit --audit-level=critical
